@@ -11,6 +11,21 @@
 		E2D8F45E2A6D40F500AE38D0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F45D2A6D40F500AE38D0 /* ContentView.swift */; };
 		E2D8F4602A6D40F700AE38D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8F45F2A6D40F700AE38D0 /* Assets.xcassets */; };
 		E2D8F4632A6D40F700AE38D0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2D8F4622A6D40F700AE38D0 /* Preview Assets.xcassets */; };
+		E2D8F46D2A6D411E00AE38D0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F46C2A6D411E00AE38D0 /* HomeView.swift */; };
+		E2D8F46F2A6D413D00AE38D0 /* PostCodeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F46E2A6D413D00AE38D0 /* PostCodeModel.swift */; };
+		E2D8F4712A6D41CD00AE38D0 /* PostCodeVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F4702A6D41CD00AE38D0 /* PostCodeVM.swift */; };
+		E2D8F4732A6D4A1100AE38D0 /* PostCodeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F4722A6D4A1100AE38D0 /* PostCodeCell.swift */; };
+		E2D8F47D2A6D4BD300AE38D0 /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2D8F4752A6D4BD200AE38D0 /* Ubuntu-Italic.ttf */; };
+		E2D8F47E2A6D4BD300AE38D0 /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2D8F4762A6D4BD300AE38D0 /* Ubuntu-LightItalic.ttf */; };
+		E2D8F47F2A6D4BD300AE38D0 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2D8F4772A6D4BD300AE38D0 /* Ubuntu-Regular.ttf */; };
+		E2D8F4802A6D4BD300AE38D0 /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2D8F4782A6D4BD300AE38D0 /* Ubuntu-BoldItalic.ttf */; };
+		E2D8F4812A6D4BD300AE38D0 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2D8F4792A6D4BD300AE38D0 /* Ubuntu-Light.ttf */; };
+		E2D8F4822A6D4BD300AE38D0 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2D8F47A2A6D4BD300AE38D0 /* Ubuntu-Bold.ttf */; };
+		E2D8F4832A6D4BD300AE38D0 /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2D8F47B2A6D4BD300AE38D0 /* Ubuntu-MediumItalic.ttf */; };
+		E2D8F4842A6D4BD300AE38D0 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E2D8F47C2A6D4BD300AE38D0 /* Ubuntu-Medium.ttf */; };
+		E2D8F4872A6D4C6900AE38D0 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F4862A6D4C6900AE38D0 /* FontManager.swift */; };
+		E2D8F48A2A6D5B9200AE38D0 /* PostCodeDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F4892A6D5B9200AE38D0 /* PostCodeDetailCell.swift */; };
+		E2D8F48C2A6EFF5700AE38D0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F48B2A6EFF5700AE38D0 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +34,22 @@
 		E2D8F45D2A6D40F500AE38D0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E2D8F45F2A6D40F700AE38D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E2D8F4622A6D40F700AE38D0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E2D8F46C2A6D411E00AE38D0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		E2D8F46E2A6D413D00AE38D0 /* PostCodeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCodeModel.swift; sourceTree = "<group>"; };
+		E2D8F4702A6D41CD00AE38D0 /* PostCodeVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCodeVM.swift; sourceTree = "<group>"; };
+		E2D8F4722A6D4A1100AE38D0 /* PostCodeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCodeCell.swift; sourceTree = "<group>"; };
+		E2D8F4752A6D4BD200AE38D0 /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		E2D8F4762A6D4BD300AE38D0 /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
+		E2D8F4772A6D4BD300AE38D0 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		E2D8F4782A6D4BD300AE38D0 /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		E2D8F4792A6D4BD300AE38D0 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		E2D8F47A2A6D4BD300AE38D0 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		E2D8F47B2A6D4BD300AE38D0 /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
+		E2D8F47C2A6D4BD300AE38D0 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		E2D8F4852A6D4BEF00AE38D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		E2D8F4862A6D4C6900AE38D0 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
+		E2D8F4892A6D5B9200AE38D0 /* PostCodeDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCodeDetailCell.swift; sourceTree = "<group>"; };
+		E2D8F48B2A6EFF5700AE38D0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +82,11 @@
 		E2D8F45A2A6D40F500AE38D0 /* PostCode */ = {
 			isa = PBXGroup;
 			children = (
+				E2D8F4852A6D4BEF00AE38D0 /* Info.plist */,
+				E2D8F4742A6D4B8300AE38D0 /* Font */,
+				E2D8F46B2A6D411400AE38D0 /* Model */,
+				E2D8F46A2A6D410700AE38D0 /* ViewModel */,
+				E2D8F4692A6D410200AE38D0 /* View */,
 				E2D8F45B2A6D40F500AE38D0 /* PostCodeApp.swift */,
 				E2D8F45D2A6D40F500AE38D0 /* ContentView.swift */,
 				E2D8F45F2A6D40F700AE38D0 /* Assets.xcassets */,
@@ -65,6 +101,57 @@
 				E2D8F4622A6D40F700AE38D0 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E2D8F4692A6D410200AE38D0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E2D8F46C2A6D411E00AE38D0 /* HomeView.swift */,
+				E2D8F4722A6D4A1100AE38D0 /* PostCodeCell.swift */,
+				E2D8F4892A6D5B9200AE38D0 /* PostCodeDetailCell.swift */,
+				E2D8F48B2A6EFF5700AE38D0 /* MapView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E2D8F46A2A6D410700AE38D0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E2D8F4702A6D41CD00AE38D0 /* PostCodeVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		E2D8F46B2A6D411400AE38D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E2D8F46E2A6D413D00AE38D0 /* PostCodeModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E2D8F4742A6D4B8300AE38D0 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				E2D8F4882A6D4C6D00AE38D0 /* Fonts */,
+				E2D8F4862A6D4C6900AE38D0 /* FontManager.swift */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		E2D8F4882A6D4C6D00AE38D0 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				E2D8F47A2A6D4BD300AE38D0 /* Ubuntu-Bold.ttf */,
+				E2D8F4782A6D4BD300AE38D0 /* Ubuntu-BoldItalic.ttf */,
+				E2D8F4752A6D4BD200AE38D0 /* Ubuntu-Italic.ttf */,
+				E2D8F4792A6D4BD300AE38D0 /* Ubuntu-Light.ttf */,
+				E2D8F4762A6D4BD300AE38D0 /* Ubuntu-LightItalic.ttf */,
+				E2D8F47C2A6D4BD300AE38D0 /* Ubuntu-Medium.ttf */,
+				E2D8F47B2A6D4BD300AE38D0 /* Ubuntu-MediumItalic.ttf */,
+				E2D8F4772A6D4BD300AE38D0 /* Ubuntu-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +212,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D8F47E2A6D4BD300AE38D0 /* Ubuntu-LightItalic.ttf in Resources */,
 				E2D8F4632A6D40F700AE38D0 /* Preview Assets.xcassets in Resources */,
+				E2D8F4812A6D4BD300AE38D0 /* Ubuntu-Light.ttf in Resources */,
+				E2D8F4802A6D4BD300AE38D0 /* Ubuntu-BoldItalic.ttf in Resources */,
+				E2D8F4822A6D4BD300AE38D0 /* Ubuntu-Bold.ttf in Resources */,
+				E2D8F47D2A6D4BD300AE38D0 /* Ubuntu-Italic.ttf in Resources */,
+				E2D8F4842A6D4BD300AE38D0 /* Ubuntu-Medium.ttf in Resources */,
+				E2D8F47F2A6D4BD300AE38D0 /* Ubuntu-Regular.ttf in Resources */,
 				E2D8F4602A6D40F700AE38D0 /* Assets.xcassets in Resources */,
+				E2D8F4832A6D4BD300AE38D0 /* Ubuntu-MediumItalic.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +232,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D8F46D2A6D411E00AE38D0 /* HomeView.swift in Sources */,
 				E2D8F45E2A6D40F500AE38D0 /* ContentView.swift in Sources */,
+				E2D8F4872A6D4C6900AE38D0 /* FontManager.swift in Sources */,
+				E2D8F4732A6D4A1100AE38D0 /* PostCodeCell.swift in Sources */,
 				E2D8F45C2A6D40F500AE38D0 /* PostCodeApp.swift in Sources */,
+				E2D8F46F2A6D413D00AE38D0 /* PostCodeModel.swift in Sources */,
+				E2D8F4712A6D41CD00AE38D0 /* PostCodeVM.swift in Sources */,
+				E2D8F48C2A6EFF5700AE38D0 /* MapView.swift in Sources */,
+				E2D8F48A2A6D5B9200AE38D0 /* PostCodeDetailCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +372,7 @@
 				DEVELOPMENT_TEAM = UJNM6DX6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PostCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -299,6 +402,7 @@
 				DEVELOPMENT_TEAM = UJNM6DX6U3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PostCode/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
