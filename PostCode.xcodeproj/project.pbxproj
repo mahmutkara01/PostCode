@@ -26,6 +26,7 @@
 		E2D8F4872A6D4C6900AE38D0 /* FontManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F4862A6D4C6900AE38D0 /* FontManager.swift */; };
 		E2D8F48A2A6D5B9200AE38D0 /* PostCodeDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F4892A6D5B9200AE38D0 /* PostCodeDetailCell.swift */; };
 		E2D8F48C2A6EFF5700AE38D0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F48B2A6EFF5700AE38D0 /* MapView.swift */; };
+		E2D8F48F2A6FE6C800AE38D0 /* hideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D8F48E2A6FE6C800AE38D0 /* hideKeyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		E2D8F4862A6D4C6900AE38D0 /* FontManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontManager.swift; sourceTree = "<group>"; };
 		E2D8F4892A6D5B9200AE38D0 /* PostCodeDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCodeDetailCell.swift; sourceTree = "<group>"; };
 		E2D8F48B2A6EFF5700AE38D0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		E2D8F48E2A6FE6C800AE38D0 /* hideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hideKeyboard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		E2D8F45A2A6D40F500AE38D0 /* PostCode */ = {
 			isa = PBXGroup;
 			children = (
+				E2D8F48D2A6FE6B500AE38D0 /* Extensions */,
 				E2D8F4852A6D4BEF00AE38D0 /* Info.plist */,
 				E2D8F4742A6D4B8300AE38D0 /* Font */,
 				E2D8F46B2A6D411400AE38D0 /* Model */,
@@ -152,6 +155,14 @@
 				E2D8F4772A6D4BD300AE38D0 /* Ubuntu-Regular.ttf */,
 			);
 			path = Fonts;
+			sourceTree = "<group>";
+		};
+		E2D8F48D2A6FE6B500AE38D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2D8F48E2A6FE6C800AE38D0 /* hideKeyboard.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +243,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2D8F48F2A6FE6C800AE38D0 /* hideKeyboard.swift in Sources */,
 				E2D8F46D2A6D411E00AE38D0 /* HomeView.swift in Sources */,
 				E2D8F45E2A6D40F500AE38D0 /* ContentView.swift in Sources */,
 				E2D8F4872A6D4C6900AE38D0 /* FontManager.swift in Sources */,

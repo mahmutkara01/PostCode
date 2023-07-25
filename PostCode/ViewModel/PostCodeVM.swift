@@ -12,7 +12,6 @@ class ViewModel: ObservableObject {
     @Published var locationData: LocationData?
     
     func fetchData(postCode: String) {
-        
         let BASE_URL = "https://api.zippopotam.us/tr/"
         let API_PATH = postCode
 
