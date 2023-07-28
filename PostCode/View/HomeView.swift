@@ -19,13 +19,15 @@ struct HomeView: View {
     @State private var postCode: String = ""
     //let themes = ["Posta Kodu ile Arama", "Bölgesel Arama"]
     @State private var selectedTheme = "Posta Kodu ile Arama"
-
+    
+    
     var body: some View {
             VStack {
-                VStack(spacing: 20){
+                VStack(alignment: .leading ,spacing: 20){
                     Text("Posta Kodunun Nereye Ait Olduğunu Öğren")
-                        .font(.custom(FontManager.Ubuntu.bold, size: 25))
+                        .font(.custom(FontManager.Ubuntu.bold, size: 30))
                         .foregroundColor(.black)
+                    
                     HStack {
                         TextField(selectedTheme, text: $postCode, onCommit: {
                             viewmodel.fetchData(postCode: postCode)
@@ -52,9 +54,9 @@ struct HomeView: View {
                         RoundedRectangle(cornerRadius: 12)
                             .fill(Color.white)
                     )
-                    .padding(.horizontal)
+                    
                 }.padding(.vertical)
-                
+                    .padding(.horizontal)
                 .background(
                     RoundedRectangle(cornerRadius: 12)
                         .fill(Color("sari"))
@@ -72,29 +74,23 @@ struct HomeView: View {
                 
                 VStack{
                     if let locationData = viewmodel.locationData {
-                        if locationData.places.isEmpty {
-                            Text("Sonuç bulunamadı")
-                                .foregroundColor(.black)
-                                .font(.system(size: 20, weight: .bold))
-                        } else {
-                            ForEach(locationData.places.prefix(1), id: \.self) { firstPlace in
-                                PostCodeCell(
-                                    country: firstPlace.state,
-                                    postCode: postCode,
-                                    stateAbbreviation: firstPlace.stateAbbreviation
-                                )
-                            }
+                        ForEach(locationData.places.prefix(1), id: \.self) { firstPlace in
+                            PostCodeCell(
+                                country: firstPlace.state,
+                                postCode: postCode,
+                                stateAbbreviation: firstPlace.stateAbbreviation
+                            )
+                        }
 
-                            ScrollView {
-                                ForEach(locationData.places, id: \.self) { place in
-                                    PostCodeDetailCell(
-                                        placeName: place.placeName,
-                                        state: place.state,
-                                        stateAbbreviation: place.stateAbbreviation,
-                                        latitude: place.latitude,
-                                        longitude: place.longitude
-                                    )
-                                }
+                        ScrollView {
+                            ForEach(locationData.places, id: \.self) { place in
+                                PostCodeDetailCell(
+                                    placeName: place.placeName,
+                                    state: place.state,
+                                    stateAbbreviation: place.stateAbbreviation,
+                                    latitude: place.latitude,
+                                    longitude: place.longitude
+                                )
                             }
                         }
                     }

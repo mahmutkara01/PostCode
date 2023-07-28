@@ -14,32 +14,75 @@ struct PostCodeDetailCell: View {
     @State var latitude: String = ""
     @State var longitude: String = ""
     @State private var isMapViewPresented = false
-
+    
     var body: some View {
         VStack{
             VStack {
                 HStack {
                     VStack(alignment: .leading) {
                         HStack{
-                            Text(placeName)
-                                .font(.custom(FontManager.Ubuntu.bold, size: 22))
+                            if placeName.isEmpty {
+                                Text(state)
+                                    .font(.custom(FontManager.Ubuntu.bold, size: 22))
+                            } else {
+                                Text(placeName)
+                                    .font(.custom(FontManager.Ubuntu.bold, size: 22))
+                            }
                         }
                     }
                     Spacer()
-                    Image(systemName: "map")
-                        .font(.custom(FontManager.Ubuntu.light, size: 20))
-                        .foregroundColor(.white)
-                        .padding(5)
-                        .background(.yellow)
-                        .cornerRadius(10)
-                        .shadow(radius: 1,x: 1,y: 1)
-                        .onTapGesture {
-                            isMapViewPresented.toggle()
-                        }
+                    Button {
+                        isMapViewPresented.toggle()
+                    } label: {
+                        Image(systemName: "map")
+                            .font(.custom(FontManager.Ubuntu.light, size: 20))
+                            .foregroundColor(.white)
+                            .padding(5)
+                            .background(.yellow)
+                            .cornerRadius(10)
+                            .shadow(radius: 1,x: 1,y: 1)
+                    }
+
                 }
             }
             .sheet(isPresented: $isMapViewPresented) {
-                MapView(latitude: latitude, longitude: longitude)
+                VStack(alignment: .trailing, spacing: 10){
+                    HStack{
+                        Text("Harita")
+                            .font(.custom(FontManager.Ubuntu.bold, size: 30))
+                        Spacer()
+                        Button{
+                            isMapViewPresented = false
+                        } label: {
+                            Image(systemName: "xmark")
+                                .font(.custom(FontManager.Ubuntu.bold, size: 20))
+                                .foregroundColor(.white)
+                                .padding(5)
+                                .background(.yellow)
+                                .cornerRadius(10)
+                                .shadow(radius: 1,x: 1,y: 1)
+                        }
+                    }.padding(.horizontal,10)
+                    
+                    ZStack {
+                        MapView(latitude: latitude, longitude: longitude)
+                            .cornerRadius(25)
+                        VStack{
+                            Spacer()
+                            if placeName.isEmpty {
+                                Text(state)
+                                    .font(.custom(FontManager.Ubuntu.bold, size: 20))
+                                    .padding(10)
+                                    .background(.ultraThinMaterial,in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+                            } else {
+                                Text(placeName)
+                                    .font(.custom(FontManager.Ubuntu.bold, size: 20))
+                                    .padding(10)
+                                    .background(.ultraThinMaterial,in: RoundedRectangle(cornerRadius: 8, style: .continuous))
+                            }
+                        }.padding(.bottom)
+                    }
+                }.padding()
             }
             .padding(.vertical,15)
             .padding(.horizontal,15)
@@ -50,7 +93,6 @@ struct PostCodeDetailCell: View {
         }.padding(.bottom,5)
             .padding(.top,2)
             .padding(.horizontal,5)
-        
     }
 }
 

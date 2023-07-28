@@ -17,7 +17,7 @@ struct MapView: View {
           
           _region = State(initialValue: MKCoordinateRegion(
               center: CLLocationCoordinate2D(latitude: lat, longitude: long),
-              span: MKCoordinateSpan(latitudeDelta: 1, longitudeDelta: 1)
+              span: MKCoordinateSpan(latitudeDelta: 0.1, longitudeDelta: 0.1)
           ))
       }
       
@@ -25,13 +25,12 @@ struct MapView: View {
           VStack(spacing: 20) {
               Map(coordinateRegion: $region)
           }
-          .padding()
           .navigationTitle("Harita")
       }
 }
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(latitude: "34.02", longitude: "23.432")
+        MapView(latitude: "39.7499385", longitude: "37.0141287")
     }
 }
