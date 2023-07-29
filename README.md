@@ -5,8 +5,10 @@
 Bu proje, SwiftUI ile geliştirilmiş bir iOS uygulamasıdır. Amacı, kullanıcının bir posta kodunu girdiğinde bu posta kodunun hangi il, ilçe ve mahalleye ait olduğunu bulmak ve kullanıcıya bu bilgileri sunmaktır.
 
 ## Örnek Ekran Görüntüsü
-<img width="255" alt="1" src="https://github.com/mahmutkara01/PostCode-Swiftui/assets/92724610/70e5c996-af85-4542-a634-bbbb11a58061">
-<img width="255" alt="2" src="https://github.com/mahmutkara01/PostCode-Swiftui/assets/92724610/6b959474-869f-4906-8a9a-23d22b1d230d">
+
+<img width="275" alt="1" src="https://github.com/mahmutkara01/PostCode-Swiftui/assets/92724610/8610fc2f-81fb-4d55-ba26-4053b3580251">
+<img width="266" alt="2" src="https://github.com/mahmutkara01/PostCode-Swiftui/assets/92724610/4d3261d0-3228-4e30-afd8-7decfb5b3d15">
+
 
 ## Nasıl Çalışır?
 
