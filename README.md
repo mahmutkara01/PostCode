@@ -40,7 +40,7 @@ Uygulamayı yerel olarak çalıştırmak için aşağıdaki adımları izleyin:
 Bu projenin geliştirilmesinde aşağıdaki kaynaklar faydalı olabilir:
 
 - [Apple SwiftUI Belgeleri](https://developer.apple.com/documentation/swiftui)
-- [Posta Kodu Veritabanı]([link_to_postal_code_database](https://api.zippopotam.us/tr/34000)) (Bu veritabanını kullanarak posta kodu bilgilerini çekebilirsiniz.)
+- [Posta Kodu Veritabanı](https://api.zippopotam.us/tr/34000) (Bu veritabanını kullanarak posta kodu bilgilerini çekebilirsiniz.)
 
 ## Katkı ve Destek
 
