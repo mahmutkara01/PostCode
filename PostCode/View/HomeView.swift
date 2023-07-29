@@ -53,14 +53,16 @@ struct HomeView: View {
                     .background(
                         RoundedRectangle(cornerRadius: 12)
                             .fill(Color.white)
+                        
                     )
+                    
                     
                 }.padding(.vertical)
                     .padding(.horizontal)
                 .background(
-                    RoundedRectangle(cornerRadius: 12)
-                        .fill(Color("sari"))
-                )
+                    LinearGradient(gradient: Gradient(colors: [Color("sari"), .orange.opacity(0.6)]), startPoint: .topLeading, endPoint: .bottomTrailing)
+                    )
+                .cornerRadius(20)
 
                /*
                 Picker("Appearance", selection: $selectedTheme) {
@@ -74,30 +76,28 @@ struct HomeView: View {
                 
                 VStack{
                     if let locationData = viewmodel.locationData {
-                        ForEach(locationData.places.prefix(1), id: \.self) { firstPlace in
-                            PostCodeCell(
-                                country: firstPlace.state,
-                                postCode: postCode,
-                                stateAbbreviation: firstPlace.stateAbbreviation
-                            )
-                        }
+                    ForEach(locationData.places.prefix(1), id: \.self) { firstPlace in
+                        PostCodeCell(
+                            country: firstPlace.state,
+                            postCode: postCode,
+                            stateAbbreviation: firstPlace.stateAbbreviation)
+                    }
 
-                        ScrollView {
-                            ForEach(locationData.places, id: \.self) { place in
-                                PostCodeDetailCell(
-                                    placeName: place.placeName,
-                                    state: place.state,
-                                    stateAbbreviation: place.stateAbbreviation,
-                                    latitude: place.latitude,
-                                    longitude: place.longitude
-                                )
-                            }
+                    ScrollView {
+                        ForEach(locationData.places, id: \.self) { place in
+                            PostCodeDetailCell(
+                                placeName: place.placeName,
+                                state: place.state,
+                                stateAbbreviation: place.stateAbbreviation,
+                                latitude: place.latitude,
+                                longitude: place.longitude)
                         }
                     }
                 }
-                Spacer()
             }
-            .padding()
+            Spacer()
+        }
+        .padding()
     }
 }
 

@@ -68,7 +68,6 @@ struct PostCodeDetailCell: View {
                         MapView(latitude: latitude, longitude: longitude)
                             .cornerRadius(25)
                         VStack{
-                            Spacer()
                             if placeName.isEmpty {
                                 Text(state)
                                     .font(.custom(FontManager.Ubuntu.bold, size: 20))
@@ -80,7 +79,8 @@ struct PostCodeDetailCell: View {
                                     .padding(10)
                                     .background(.ultraThinMaterial,in: RoundedRectangle(cornerRadius: 8, style: .continuous))
                             }
-                        }.padding(.bottom)
+                            Spacer()
+                        }.padding(.top)
                     }
                 }.padding()
             }
